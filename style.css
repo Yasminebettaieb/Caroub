@@ -37,9 +37,26 @@ Version: 2.0
 /*---------------------------
     1. THEME BG COLOR
 -----------------------------*/
+.btn{
+    background-color: #c2ccdd !important;
+    color: black !important;
+}
+.btn:hover {
+background-color: black !important;
+color: white  !important ;
+}
 .overflow-xhidden {
     overflow-x: hidden;
     overflow-y: inherit;
+}
+.visa{
+	height: 55px;
+	width: 300px;
+}
+.twint{
+	margin-top: 11px;
+
+	height: 50px;
 }
 
 section,
@@ -260,7 +277,12 @@ header {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        position: relative;
+        height: 100vh;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .area-title {
@@ -3628,6 +3650,7 @@ ul.products .product img {
 .cd-main-search input[type="search"]:-ms-input-placeholder {
     color: #5c5d6a;
 }
+
 
 @media only screen and (min-width: 1024px) {
     .cd-main-search {

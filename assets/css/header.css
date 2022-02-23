@@ -95,6 +95,7 @@
 ------------------------------*/
 .stellarnav.light {
     background: inherit;
+    left: 15%;
 }
 
 .header-top-area {
@@ -215,7 +216,7 @@
 }
 
 .custom-logo-link img {
-    max-width: 200px;
+    max-width: 150px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
