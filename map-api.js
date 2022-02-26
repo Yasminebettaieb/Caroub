@@ -6,17 +6,21 @@ function initMap() {
     var autocomplete1 = new google.maps.places.Autocomplete(input1);
     google.maps.event.addListener(autocomplete, 'place_changed' ,  function() {
      locationChangeHandler(autocomplete,autocomplete1);
+  
+     if (document.getElementById('Price') != null) {
+        document.getElementById('Price').value="Calculer";
+    }  
      PriceCalculator();
-     document.getElementById('Price').value="Calculer";
     }
 
     );
     google.maps.event.addListener(autocomplete1, 'place_changed' ,  function() {
         locationChangeHandler(autocomplete,autocomplete1);
-        PriceCalculator();
         if (document.getElementById('Price') != null) {
             document.getElementById('Price').value="Calculer";
-        }
+        }  
+              PriceCalculator();
+
        }
        );
 
@@ -78,5 +82,4 @@ function PriceCalculator (){
             price=price+(10*4.00);
         }
 		
-		document.getElementById('Price').value=(Math.ceil(price*10)/10).toFixed(2);
 }

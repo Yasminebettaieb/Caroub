@@ -38,12 +38,13 @@ Version: 2.0
     1. THEME BG COLOR
 -----------------------------*/
 .btn{
-    background-color: #c2ccdd !important;
-    color: black !important;
+    background-color: black !important;
+    color: white !important;
 }
 .btn:hover {
-background-color: black !important;
-color: white  !important ;
+background-color: white !important;
+opacity: 0.7;
+color: black  !important ;
 }
 .overflow-xhidden {
     overflow-x: hidden;
