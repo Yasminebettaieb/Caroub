@@ -38,7 +38,7 @@ Version: 2.0
     1. THEME BG COLOR
 -----------------------------*/
 .btn{
-    background-color: black !important;
+    background-color: #bcbcbc !important;
     color: white !important;
 }
 .btn:hover {
@@ -279,7 +279,10 @@ header {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  
+    .section {
+        position: relative;
+        height: 100vh;
+    }
 }
 
 @media only screen and (max-width: 767px) {
