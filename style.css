@@ -170,13 +170,15 @@ header {
 /*---------------------------------
     3. SCROLL TO TOP
 ----------------------------------*/
-
+.col-lg-7 {
+    width: -webkit-fill-available !important;
+}
 .scrolltotop {
     background: rgba(0, 0, 0, 0) linear-gradient(135deg, #584bfb 0%, #45aafd 99%) repeat scroll 0 0;
     border-radius: 50%;
     bottom: 20px;
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
-    color: #ffffff;
+    color: black;
     display: none;
     font-size: 24px;
     height: 60px;
@@ -294,7 +296,20 @@ header {
         font-size: 28px;
     }
 }
+@media only screen and (max-width: 767px) {
 
+.acceuil{
+    
+        text-align: center;
+        text-transform: capitalize;
+        color: rgb(17, 3, 209);
+        visibility: visible;
+        animation-delay: 0.6s;
+        animation-name: fadeInUp;
+        font-size: 15px;
+    }
+
+}
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .area-title h2 {
         font-size: 32px;
@@ -1157,7 +1172,14 @@ BOX HOVER 8
     10. WELCOME TEXT AREA
 ------------------------------*/
 .welcome-text-area .area-bg {
-    background: url(assets/img/background/blue_bg.png) no-repeat scroll center center / 100% 100%;
+    background-image: url(assets/img/background/w.jpg);
+    background-size: cover; }
+.testing {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-align: center; float: right;
+    display: inline-block; overflow: hidden; border-radius: 13px;
+                                 width: 250px; height: 83px;
 }
 
 .welcome-area {
@@ -3404,7 +3426,7 @@ ul.products .product img {
 }
 
 .cd-main-nav-wrapper {
-    padding: 0 5%;
+    padding: 0 8%;
 }
 
 .cd-main-nav-wrapper::after {

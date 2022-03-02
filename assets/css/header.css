@@ -181,16 +181,16 @@
 }
 
 .navbar-header h3 a {
-    color: #ffffff;
+    color: black;
 }
 
 .dark-menu .navbar-header h3 a {
-    color: inherit;
+    color: black;
 }
 
 .is-sticky .dark-menu .navbar-header h3 a,
 .is-sticky .navbar-header h3 a {
-    color: #ffffff;
+    color: black;
 }
 
 .navbar-brand > img {
@@ -241,7 +241,7 @@ ul#nav {
 
 ul#nav li a {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #ffffff;
+    color: black;
     font-weight: 600;
 
     letter-spacing: 1px;
@@ -427,7 +427,7 @@ ul#nav li.active > a::after {
 ------------------------------------*/
 @media (min-width: 768px) and (max-width: 991px) {
     .mainmenu-area {
-        background: rgba(0, 0, 0, 0) linear-gradient(135deg, #584bfb 0%, #45aafd 99%) repeat scroll 0 0;
+        background: transparent repeat scroll 0 0;
     }
 
     .mainmenu-area svg {
@@ -598,7 +598,7 @@ ul#nav li.active > a::after {
 @media only screen and (max-width: 767px) {
 
     .mainmenu-area {
-        background: rgba(0, 0, 0, 0) linear-gradient(135deg, #584bfb 0%, #45aafd 99%) repeat scroll 0 0;
+        background: transparent repeat scroll 0 0;
     }
 
     .mainmenu-area svg {
@@ -903,7 +903,7 @@ ul#nav li.active > a::after {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .home-two .mainmenu-area {
-        background: rgba(0, 0, 0, 0) linear-gradient(135deg, #553fbf 0%, #8573e7 99%) repeat scroll 0 0;
+        background: transparent repeat scroll 0 0;
     }
 
     .home-two ul#nav li a {
