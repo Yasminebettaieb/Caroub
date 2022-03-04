@@ -264,6 +264,7 @@ header {
     font-size: 48px;
     line-height: 1.2;
     margin-bottom: 20px;
+    margin-top: 20%;
     text-transform: capitalize;
     font-weight: 600;
 }
@@ -1177,7 +1178,7 @@ BOX HOVER 8
 .testing {
     background-color: transparent !important;
     box-shadow: none !important;
-    text-align: center; float: right;
+    text-align: center; 
     display: inline-block; overflow: hidden; border-radius: 13px;
                                  width: 250px; height: 83px;
 }
