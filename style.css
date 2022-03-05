@@ -1209,9 +1209,9 @@ BOX HOVER 8
 }
 
 .welcome-text h1 {
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 30px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .welcome-text h1 span {
@@ -1255,16 +1255,17 @@ BOX HOVER 8
 @media only screen and (min-width: 1920px) {}
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     .welcome-text h1 {
-        /*font-size: 52px;*/
-        font-size: 50px;
+        font-size: 40px;
+        margin-bottom: 30px;
+        font-weight: 400;
     }
+    
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .welcome-text {
-        text-align: center;
-    }
+  
 
     .top-area {
         height: auto;
