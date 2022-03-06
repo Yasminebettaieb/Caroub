@@ -192,7 +192,7 @@
     height: 124px;
     width: 124px;
     margin-top: 34px;
-    margin-left: auto;
+    margin-left: 35%;
   }
 
   .u-section-1 .u-text-3 {
@@ -234,6 +234,12 @@
     width: 166px;
     margin-top: 9px;
     margin-right: auto;
+  }
+  .u-section-1 .u-icon-2 {
+    height: 124px;
+    width: 124px;
+    margin-top: 34px;
+    margin-left: 35%;
   }
 
   .u-section-1 .u-text-1 {
@@ -306,7 +312,7 @@
 
   .u-section-1 .u-icon-2 {
     margin-top: 16px;
-    margin-left: 112px;
+    margin-left: 125px;
   }
 
   .u-section-1 .u-text-3 {
