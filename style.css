@@ -251,6 +251,7 @@ header {
     margin-bottom: 30px;
     overflow: hidden;
     text-transform: uppercase;
+    margin-top: 20%;
 }
 
 .subtitle .letter {
@@ -295,6 +296,9 @@ header {
 
     .area-title h2 {
         font-size: 28px;
+    }
+    .text2{
+        font-size: 30px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -1209,9 +1213,9 @@ BOX HOVER 8
 }
 
 .welcome-text h1 {
-    font-size: 40px;
-    margin-bottom: 30px;
-    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .welcome-text h1 span {
@@ -1257,9 +1261,9 @@ BOX HOVER 8
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 
     .welcome-text h1 {
-        font-size: 40px;
+        font-size: 32px;
         margin-bottom: 30px;
-        font-weight: 400;
+        font-weight: 600;
     }
     
 }
@@ -1278,7 +1282,7 @@ BOX HOVER 8
     }
 
     .welcome-text h1 {
-        font-size: 23px;
+        font-size: 18px;
     }
 
     .top-area {
@@ -1290,6 +1294,7 @@ BOX HOVER 8
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .welcome-text h1 {
         font-size: 25px;
+        margin-top: 16%;
     }
 }
 
