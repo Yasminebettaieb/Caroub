@@ -54,12 +54,15 @@
 .u-section-1 .u-icon-2 {
   height: 122px;
   width: 122px;
-  margin: 45px auto 0;
+  margin-top: 20px;
+  margin-left: 43%;
 }
 .img{
  height: 162px !important;
  width: 162px !important;
 }
+
+
 
 .u-section-1 .u-text-3 {
   letter-spacing: 1px;
@@ -264,6 +267,14 @@
   .u-section-1 .u-sheet-1 {
     min-height: 910px;
   }
+  .img{
+    height: 142px !important;
+    width: 142px !important;
+   }
+   .img1{
+    height: 102px !important;
+    width: 102px !important;
+   }
 
   .u-section-1 .u-layout-cell-1 {
     min-height: 386px;
