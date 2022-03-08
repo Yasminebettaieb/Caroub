@@ -551,7 +551,7 @@ ul#nav li.active > a::after {
     .is-sticky ul#nav li a,
     ul#nav li a {
         color: #fff;
-        padding: 10px 15px;
+        padding: 1px 15px;
     }
 
     ul#nav li a::after {

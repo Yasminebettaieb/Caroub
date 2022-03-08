@@ -62,7 +62,12 @@
  width: 162px !important;
 }
 
-
+.img1 {
+  height: 109px !important;
+  width: 112px !important;
+  margin-top: 14px;
+  margin-left: 20px;
+}
 
 .u-section-1 .u-text-3 {
   letter-spacing: 1px;
@@ -276,6 +281,7 @@
   .img{
     height: 142px !important;
     width: 142px !important;
+    margin-left: 13px;
    }
    .img1{
     height: 102px !important;
@@ -312,13 +318,13 @@
 
   .u-section-1 .u-icon-2 {
     margin-top: 16px;
-    margin-left: 125px;
+    margin-left: 130px;
   }
 
   .u-section-1 .u-text-3 {
     margin-top: 7px;
     margin-right: -12px;
-    margin-left: 83px;
+    margin-left: 73px;
   }
 
   .u-section-1 .u-text-4 {

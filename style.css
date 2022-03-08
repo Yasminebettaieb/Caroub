@@ -31,14 +31,24 @@ Version: 2.0
     23. HOME THREE
     24. HOME FOUR
     25. SINGLE PAGE
+
     26. PRODUCT PAGE
     27. SINGE PRODUCT PAGE
 ----------------------------------------------------------------------------------------*/
 /*---------------------------
     1. THEME BG COLOR
 -----------------------------*/
+.img1{
+    width: 40px;
+    margin: 3px;
+}
+.img2{
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+}
 .btn{
-    background-color: #bcbcbc !important;
+    background-color: #7e7b7b !important;
     color: white !important;
 }
 .btn:hover {
@@ -295,7 +305,7 @@ header {
     }
 
     .area-title h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
     .text2{
         font-size: 30px;
@@ -1212,11 +1222,19 @@ BOX HOVER 8
     text-transform: uppercase;
 }
 
+
 .welcome-text h1 {
-    font-size: 32px;
+    font-size: 42px;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
+
+.welcome-text h2 {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 
 .welcome-text h1 span {
     display: block;
@@ -1260,11 +1278,7 @@ BOX HOVER 8
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 
-    .welcome-text h1 {
-        font-size: 32px;
-        margin-bottom: 30px;
-        font-weight: 600;
-    }
+   
     
 }
 
@@ -1282,8 +1296,16 @@ BOX HOVER 8
     }
 
     .welcome-text h1 {
-        font-size: 18px;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 5%;
+        text-align: left;
     }
+    .welcome-text h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
 
     .top-area {
         height: auto;
@@ -1293,11 +1315,21 @@ BOX HOVER 8
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .welcome-text h1 {
-        font-size: 25px;
-        margin-top: 16%;
+        margin-top: 5%;
     }
 }
 
+@media only screen and (max-width: 350px){
+.welcome-text h2 {
+    font-size: 20px;
+    text-align: center;
+}
+.welcome-text h1 {
+    font-size: 22px;
+    text-align: left;
+    margin-top: 5%;
+}
+}
 /*-------------------------------
     HOME ONE WELCOME LAYERS
 --------------------------------*/
