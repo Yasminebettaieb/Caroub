@@ -1254,7 +1254,7 @@ BOX HOVER 8
 .welcome-text h2 {
     font-size: 65px;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 14%;
 }
 .welcome-text h1 span {
     display: block;
@@ -1342,15 +1342,15 @@ BOX HOVER 8
         text-transform: uppercase;
     }
     .welcome-text h1 {
-        font-size: 25px;
+        font-size: 24px;
         font-weight: 600;
-        margin-top: 15%;
+        margin-top: 1%;
         text-align: left;
     }
   .welcome-text h2 {
     font-size: 43px;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 10%;
 }
 
     .top-area {
@@ -1369,7 +1369,7 @@ BOX HOVER 8
     .welcome-text h2 {
         font-size: 30px;
         text-align: center;
-        margin-top: 34%;    }
+        margin-top: 15%;    }
 }
 
 
@@ -1377,11 +1377,18 @@ BOX HOVER 8
 .welcome-text h2 {
     font-size: 20px;
     text-align: center;
+    margin-top: 0%;
 }
 .welcome-text h1 {
-    font-size: 22px;
+    font-size: 21px;
     text-align: left;
-    margin-top: 30%;
+   
+}
+.welcome-text h4 {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 }
 /*-------------------------------
