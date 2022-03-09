@@ -261,7 +261,7 @@ header {
     margin-bottom: 30px;
     overflow: hidden;
     text-transform: uppercase;
-    margin-top: 20%;
+    margin-top: 40%;
 }
 
 .subtitle .letter {
@@ -1227,8 +1227,8 @@ BOX HOVER 8
 }
 
 .welcome-text h4 {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -1244,7 +1244,7 @@ BOX HOVER 8
 .welcome-text h2 {
     font-size: 65px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 .welcome-text h1 span {
     display: block;
@@ -1292,6 +1292,13 @@ BOX HOVER 8
         text-align: center;
         padding-bottom: 20px;
     }
+    
+.welcome-text h4 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
    
     
 }
@@ -1314,6 +1321,12 @@ BOX HOVER 8
         text-align: center;
     }
 
+    .welcome-text h4 {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
     .welcome-text h1 {
         font-size: 30px;
         font-weight: 600;
@@ -1323,7 +1336,7 @@ BOX HOVER 8
   .welcome-text h2 {
     font-size: 43px;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 25%;
 }
 
     .top-area {
@@ -1342,8 +1355,7 @@ BOX HOVER 8
     .welcome-text h2 {
         font-size: 30px;
         text-align: center;
-        margin-top: 20%;
-    }
+        margin-top: 34%;    }
 }
 
 
@@ -2980,6 +2992,7 @@ BOX HOVER 8
     display: flex;
     align-items: center;
     height: 100%;
+    margin-top: 15%;
 }
 
 .home5-layer-1 {
