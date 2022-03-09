@@ -131,3 +131,14 @@
 	border-radius: 3px;
 	text-transform: uppercase;
 }
+@media (max-width: 1199px) {
+	.booking-form .form-label {
+		color: black;
+		font-size: 10px;
+		font-weight: 400;
+		margin-bottom: 5px;
+		display: block;
+		text-transform: uppercase;
+		float: left;
+	}
+}
