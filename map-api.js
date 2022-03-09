@@ -61,7 +61,6 @@ function calcul(){
 
 
 function PriceCalculator (){
-    let dateText= document.getElementById('from-date-picker').value;
     
     let kilometrage=document.getElementById('Kilometrage').value;
         if(kilometrage==="" || dateText==="")

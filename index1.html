@@ -26,9 +26,7 @@
     <!--====== MAIN STYLESHEETS ======-->
     <link href="style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
-	<script src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyCh5BIXQaEleYhJFdbIrZDmdmz34_mIHYE"></script>
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="map-api.js"></script>
+	
     <link rel="stylesheet" href="css/theme-pink.css" />
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="css/jquery-ui.theme.css" />
@@ -193,7 +191,7 @@
                                         <div class="col-sm-3">
                                             <div class="form-group">
                                             <span class="form-label autocomplete">Départ ( exactement )</span>
-                                            <input class="form-control" onchange="initMap()" id="PickupLocationInput" autocomplete="off"  type="text" placeholder="Adresse de départ">
+                                            <input class="form-control" id="PickupLocationInput" autocomplete="off"  type="text" placeholder="Adresse de départ">
                                         </div></div>
     
                                         <div class="col-sm-3">
@@ -209,7 +207,8 @@
                                         </div></div>
                                         </div>
                                         <div class="row ">
-                                       
+                                            <h4 style="color: gray;"><br> Télécharger l'app sur</h4>
+
 
                                                           <a class="testing" href="https://apps.apple.com/us/app/caroub/id1611192245?itsct=apps_box_badge&amp;itscg=30200" ><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fr-fr?size=250x83&amp;releaseDate=1645660800&h=8f92b6ec1b9847d8a1138e4b5166c318"
                                
@@ -441,9 +440,9 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="area-content xs-center xs-mb50">
-                        <h4 class="subtitle">Clean Design</h4>
-                        <h3>Applic Apps Screenshot</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis no strud exercitation ullamco laboris nisi ut aliquip exea commodo consequat.</p>
+                        <h4 class="subtitle">Caroub City</h4>
+                        <h3>Facile à utiliser  <br>
+                       Votre trajet en quelques clics</h3>
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-6 col-xs-12">
@@ -473,7 +472,7 @@
     </section>
     <!--SCREENSHOT AREA END-->
 
-    <!--TESTMONIAL AREA-->
+    <!--TESTMONIAL AREA
     <section class="testmonial-area section-padding gray-bg fix" id="process">
         <div class="testmonial-layers">
             <div class="testmonial-layer-1" data-parallax='{"y": 200, "smoothness": 100}'><img src="assets/img/bg-layers/layers-1.png" alt=""></div>
@@ -537,308 +536,9 @@
             </div>
         </div>
     </section>
-    <!--TESTMONIAL AREA END-->
+  -->
 
-    <!--PRICEING AREA
-    <section class="pricing-area padding-100-50" id="pricing">
-        <div class="container">
-            <div class="row flex-v-center">
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                    <div class="area-title sm-center xs-center">
-                        <h4 class="subtitle">pricing plan</h4>
-                        <h2>Our Latest Pricing Plan </h2>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                    <div class="right price-right-menu sm-mb50 xs-mb50 sm-center xs-center">
-                        <ul class="price-menu">
-                            <li class="active"><a data-toggle="tab" href="#monthly">Monthly</a></li>
-                            <li><a data-toggle="tab" href="#yearly">Yearly</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="tab-content">
-                        <div id="monthly" class="tab-pane fade in active">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="single-price mb50">
-                                        <div class="price-header">
-                                            <div class="price-thumb-hidding">
-                                                <img src="assets/img/icons/rocket.png" alt="">
-                                                <div class="price-rate"><span class="currency">$</span>45.99</div>
-                                                <div class="price-title">Basic Plan</div>
-                                            </div>
-                                        </div>
-                                        <div class="price-details">
-                                            <ul>
-                                                <li><i class="dripicons-checkmark"></i> Push Notifications</li>
-                                                <li><i class="dripicons-checkmark"></i> Offline Synchronization</li>
-                                                <li><i class="dripicons-checkmark"></i> SQL Database</li>
-                                                <li><i class="dripicons-cross"></i> Speech & Text Analytics</li>
-                                                <li><i class="dripicons-cross"></i> 24/7 Support</li>
-                                            </ul>
-                                        </div>
-                                        <div class="price-footer">
-                                            <a href="#" class="purchase-button">Purchase</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-price mb50 active">
-                                        <div class="sale-promo">popular <span>-50%</span></div>
-                                        <div class="price-header">
-                                            <div class="price-thumb-hidding">
-                                                <img src="assets/img/icons/desktop.png" alt="">
-                                                <div class="price-rate"><span class="currency">$</span>45.99</div>
-                                                <div class="price-title">Standard Plan</div>
-                                            </div>
-                                        </div>
-                                        <div class="price-details">
-                                            <ul>
-                                                <li><i class="dripicons-checkmark"></i> Push Notifications</li>
-                                                <li><i class="dripicons-checkmark"></i> Offline Synchronization</li>
-                                                <li><i class="dripicons-checkmark"></i> SQL Database</li>
-                                                <li><i class="dripicons-checkmark"></i> Speech & Text Analytics</li>
-                                                <li><i class="dripicons-cross"></i> 24/7 Support</li>
-                                            </ul>
-                                        </div>
-                                        <div class="price-footer">
-                                            <a href="#" class="purchase-button">Purchase</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-price mb50">
-                                        <div class="price-header">
-                                            <div class="price-thumb-hidding">
-                                                <img src="assets/img/icons/witing-puzzle.png" alt="">
-                                                <div class="price-rate"><span class="currency">$</span>45.99</div>
-                                                <div class="price-title">Premium Plan</div>
-                                            </div>
-                                        </div>
-                                        <div class="price-details">
-                                            <ul>
-                                                <li><i class="dripicons-checkmark"></i> Push Notifications</li>
-                                                <li><i class="dripicons-checkmark"></i> Offline Synchronization</li>
-                                                <li><i class="dripicons-checkmark"></i> SQL Database</li>
-                                                <li><i class="dripicons-checkmark"></i> Speech & Text Analytics</li>
-                                                <li><i class="dripicons-checkmark"></i> 24/7 Support</li>
-                                            </ul>
-                                        </div>
-                                        <div class="price-footer">
-                                            <a href="#" class="purchase-button">Purchase</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="yearly" class="tab-pane fade">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="single-price mb50">
-                                        <div class="price-header">
-                                            <div class="price-thumb-hidding">
-                                                <img src="assets/img/icons/rocket.png" alt="">
-                                                <div class="price-rate"><span class="currency">$</span>45.99</div>
-                                                <div class="price-title">Basic Plan</div>
-                                            </div>
-                                        </div>
-                                        <div class="price-details">
-                                            <ul>
-                                                <li><i class="dripicons-checkmark"></i> Push Notifications</li>
-                                                <li><i class="dripicons-checkmark"></i> Offline Synchronization</li>
-                                                <li><i class="dripicons-checkmark"></i> SQL Database</li>
-                                                <li><i class="dripicons-cross"></i> Speech & Text Analytics</li>
-                                                <li><i class="dripicons-cross"></i> 24/7 Support</li>
-                                            </ul>
-                                        </div>
-                                        <div class="price-footer">
-                                            <a href="#" class="purchase-button">Purchase</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-price mb50">
-                                        <div class="sale-promo">popular <span>-50%</span></div>
-                                        <div class="price-header">
-                                            <div class="price-thumb-hidding">
-                                                <img src="assets/img/icons/desktop.png" alt="">
-                                                <div class="price-rate"><span class="currency">$</span>45.99</div>
-                                                <div class="price-title">Standard Plan</div>
-                                            </div>
-                                        </div>
-                                        <div class="price-details">
-                                            <ul>
-                                                <li><i class="dripicons-checkmark"></i> Push Notifications</li>
-                                                <li><i class="dripicons-checkmark"></i> Offline Synchronization</li>
-                                                <li><i class="dripicons-checkmark"></i> SQL Database</li>
-                                                <li><i class="dripicons-checkmark"></i> Speech & Text Analytics</li>
-                                                <li><i class="dripicons-cross"></i> 24/7 Support</li>
-                                            </ul>
-                                        </div>
-                                        <div class="price-footer">
-                                            <a href="#" class="purchase-button">Purchase</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-price mb50">
-                                        <div class="price-header">
-                                            <div class="price-thumb-hidding">
-                                                <img src="assets/img/icons/witing-puzzle.png" alt="">
-                                                <div class="price-rate"><span class="currency">$</span>45.99</div>
-                                                <div class="price-title">Premium Plan</div>
-                                            </div>
-                                        </div>
-                                        <div class="price-details">
-                                            <ul>
-                                                <li><i class="dripicons-checkmark"></i> Push Notifications</li>
-                                                <li><i class="dripicons-checkmark"></i> Offline Synchronization</li>
-                                                <li><i class="dripicons-checkmark"></i> SQL Database</li>
-                                                <li><i class="dripicons-checkmark"></i> Speech & Text Analytics</li>
-                                                <li><i class="dripicons-checkmark"></i> 24/7 Support</li>
-                                            </ul>
-                                        </div>
-                                        <div class="price-footer">
-                                            <a href="#" class="purchase-button">Purchase</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    PRICEING AREA END  FAQS AREA-->
-    <section class="faqs-area padding-top gray-bg" id="faqs">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-6 col-xs-12">
-                    <div class="area-image-content hidden-sm hidden-xs">
-                        <div class="faqs-mockup-1" data-parallax='{"y": 150, "smoothness": 100}'><img src="assets/img/faqs/faqs-mockup.png" alt=""></div>
-                        <div class="faqs-mockup-2"><img src="assets/img/faqs/faqs-question.png" alt=""></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xs-12">
-                    <div class="area-content sm-mb80 xs-mb50">
-                        <h4 class="subtitle font500 alt-font uppercase">ask questions</h4>
-                        <h2>Frequently Asked Questions</h2>
-                        <div class="panel-group sm-mt50 xs-mt50" id="accordion-main">
-
-                            <!-- start tab content -->
-                            <div class="panel panel-default active">
-                                <div class="panel-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseOne">
-                                        <div class="panel-title">
-                                            <span>01</span>
-                                            <span>Creating The Feature Queries Manager ?</span>
-                                            <i class="pull-right fa fa-angle-down"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore</div>
-                                </div>
-                            </div>
-                            <!-- end tab content -->
-
-                            <!-- start tab content -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseTwo">
-                                        <div class="panel-title">
-                                            <span>02</span>
-                                            <span>Building Diverse Design Teams ?</span>
-                                            <i class="pull-right fa fa-angle-down"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore</div>
-                                </div>
-                            </div>
-                            <!-- end tab content -->
-
-                            <!-- start tab content -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseThree">
-                                        <div class="panel-title">
-                                            <span>03</span>
-                                            <span>Augmented And Virtual Reality Icon ?</span>
-                                            <i class="pull-right fa fa-angle-down"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore</div>
-                                </div>
-                            </div>
-                            <!-- end tab content -->
-
-                            <!-- start tab content -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseFour">
-                                        <div class="panel-title">
-                                            <span>04</span>
-                                            <span>How To Create A Flat Vector ?</span>
-                                            <i class="pull-right fa fa-angle-down"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore</div>
-                                </div>
-                            </div>
-                            <!-- end tab content -->
-
-                            <!-- start tab content -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseFive">
-                                        <div class="panel-title">
-                                            <span>05</span>
-                                            <span>How To Create A Flat Vector ?</span>
-                                            <i class="pull-right fa fa-angle-down"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div id="collapseFive" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore</div>
-                                </div>
-                            </div>
-                            <!-- end tab content -->
-
-                            <!-- start tab content -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-main" href="#collapseSix">
-                                        <div class="panel-title">
-                                            <span>06</span>
-                                            <span>How To Create A Flat Vector ?</span>
-                                            <i class="pull-right fa fa-angle-down"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div id="collapseSix" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei temporo incididunt ut labore et dolore magna aliqua. Ut enim ad minim exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore</div>
-                                </div>
-                            </div>
-                            <!-- end tab content -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--FAQS AREA END-->
-
+ 
     <!--BLOG AREA
     <section class="blog-area padding-100-50" id="blog">
         <div class="container">
@@ -904,7 +604,7 @@
                 <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
                     <div class="area-title center">
                         <h4 class="subtitle">Contact Us</h4>
-                        <h2>Call Us Or Started To Talk With Us</h2>
+                        <h2>N'hésitez pas de nous contacter</h2>
                     </div>
                 </div>
             </div>
@@ -914,20 +614,17 @@
                         <div class="single-contact">
                             <div class="contact-icon"><i class="dripicons-location"></i></div>
                             <h3>Location</h3>
-                            <p><b>Le Trési 6A </b> <br><b> 1028 Préverenges</b> <br><b> Switzeland</b></p>
+                            <p><b>Le Trési 6A </b> <br><b> 1028 Préverenges</b> <br><b> Switzerland</b></p>
                         </div>
                         <div class="single-contact">
                             <div class="contact-icon"><i class="dripicons-mail"></i></div>
                             <h3>Contact</h3>
-                            <p><b> reservation@caroub.ch</b></p>
-                            <p><b>infoApplic.net</b></p>
+                            <p><b> support@caroub.ch</b></p>
                         </div>
                         <div class="single-contact">
                             <div class="contact-icon"><i class="dripicons-phone"></i></div>
-                            <h3>Contact</h3>
-                            <p><b>Administration </b><br> <b>+41 21 566 28 90</b></p>
-                            <br>
-                            <p><b>Réservation course </b><br> <b>+41 21 577 77 77</b></p>
+                            <h3>Numéro</h3>
+                            <p> <b>+41 21 577 77 77</b></p>
                         </div>
                     </div>
                 </div>
@@ -938,24 +635,24 @@
                                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                     <div class="form-group" id="name-field">
                                         <div class="form-input">
-                                            <label for="form-name">Your Name</label>
-                                            <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Jhonathan Doe" required>
+                                            <label for="form-name">Votre Nom</label>
+                                            <input type="text" class="form-control" id="form-name" name="name" placeholder="Jhonathan Doe" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                     <div class="form-group" id="email-field">
                                         <div class="form-input">
-                                            <label for="form-email">Your Mail</label>
-                                            <input type="email" class="form-control" id="form-email" name="form-email" placeholder="support@mail.com" required>
+                                            <label for="form-email">Votre Mail</label>
+                                            <input type="email" class="form-control" id="form-email" name="email" placeholder="email@mail.com" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                     <div class="form-group" id="email-field">
                                         <div class="form-input">
-                                            <label for="form-email">Téléphone</label>
-                                            <input type="email"  required class="form-control" id="form-email" name="form-email" placeholder="+416569999" required>
+                                            <label for="form-tel">Téléphone</label>
+                                            <input type="text"  required class="form-control"  name="telephone" placeholder="+41 79 123 12 12" required>
                                         </div>
                                     </div>
                                 </div>
@@ -963,22 +660,22 @@
                                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                     <div class="form-group" id="phone-field">
                                         <div class="form-input">
-                                            <label for="form-phone">Your Subject</label>
-                                            <input type="text" class="form-control" id="form-phone" name="form-phone" placeholder="Subject..">
+                                            <label for="form-phone">Sujet</label>
+                                            <input type="text" class="form-control" id="form-phone" name="form-phone" placeholder="Sujet..">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                     <div class="form-group" id="message-field">
                                         <div class="form-input">
-                                            <label for="form-message">Your Message</label>
-                                            <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder="Your Your Message" required></textarea>
+                                            <label for="form-message">Votre Message</label>
+                                            <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder=" Votre Message" required></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                     <div class="form-group mb0">
-                                        <button class="read-more active" type="submit">Send Message</button>
+                                        <button class="read-more active" type="submit">Envoyer le message</button>
                                     </div>
                                 </div>
                             </div>
@@ -1099,7 +796,9 @@
     <script src="assets/js/footer-reveal.min.js"></script>
     <script src="assets/js/ResizeSensor.min.js"></script>
     <script src="assets/js/theia-sticky-sidebar.min.js"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyCh5BIXQaEleYhJFdbIrZDmdmz34_mIHYE"></script>
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="./map-api.js"></script>
     <!--===== ACTIVE JS=====-->
     <script src="assets/js/main.js"></script>
 

@@ -1237,16 +1237,15 @@ BOX HOVER 8
 .welcome-text h1 {
     font-size: 42px;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 600;
 }
+
 
 .welcome-text h2 {
-    font-size: 45px;
+    font-size: 65px;
     text-align: center;
-    padding-bottom: 20px;
+    margin-top: 10%;
 }
-
-
 .welcome-text h1 span {
     display: block;
     font-weight: 300;
@@ -1288,14 +1287,22 @@ BOX HOVER 8
 @media only screen and (min-width: 1920px) {}
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-
+    .welcome-text h2 {
+        font-size: 45px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
    
     
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   
-
+    .welcome-text h2 {
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
     .top-area {
         height: auto;
     }
@@ -1309,16 +1316,15 @@ BOX HOVER 8
 
     .welcome-text h1 {
         font-size: 30px;
-        font-weight: 500;
-        margin-top: 5%;
+        font-weight: 600;
+        margin-top: 11%;
         text-align: left;
     }
-    .welcome-text h2 {
-        font-size: 30px;
-        text-align: center;
-        margin-top: 20%;
-    }
-
+  .welcome-text h2 {
+    font-size: 43px;
+    text-align: center;
+    margin-top: 20%;
+}
 
     .top-area {
         height: auto;
@@ -1331,6 +1337,15 @@ BOX HOVER 8
         margin-top: 5%;
     }
 }
+
+@media only screen and (max-width: 490px){
+    .welcome-text h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20%;
+    }
+}
+
 
 @media only screen and (max-width: 350px){
 .welcome-text h2 {
