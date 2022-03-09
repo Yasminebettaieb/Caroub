@@ -300,9 +300,14 @@ header {
 }
 
 @media only screen and (max-width: 767px) {
-
-
-
+    .read-more:hover, .read-more:focus, .read-more.active {
+        font-size: 10px;
+        color: #ffffff;
+    }
+    .btn-sumbit{
+        text-align: center;
+        font-size: 12px;
+    }
     .area-title {
         margin-bottom: 50px;
     }
@@ -314,12 +319,12 @@ header {
         font-size: 30px;
     }
     .img1{
-        width: 30px;
+        width: 40px;
         margin: 3px;
     }
     .img2{
-        width: 22px;
-        height: 22px;
+        width: 35px;
+        height: 35px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -1197,6 +1202,10 @@ BOX HOVER 8
 /*----------------------------
     10. WELCOME TEXT AREA
 ------------------------------*/
+.back-bg{
+     background-image: url(assets/img/background/w.jpg);
+    background-size: cover; 
+}
 .welcome-text-area .area-bg {
     background-image: url(assets/img/background/w.jpg);
     background-size: cover; }
@@ -1252,7 +1261,7 @@ BOX HOVER 8
     font-weight: 300;
 }
 
-.home-button a {
+.home-button a { /*
     background: #4d84fc none repeat scroll 0 0;
     border-radius: 50px;
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
@@ -1264,7 +1273,7 @@ BOX HOVER 8
     margin-right: 15px;
     padding: 15px 40px;
     position: relative;
-    text-transform: uppercase;
+    text-transform: uppercase;*/
 }
 
 .home-button a:hover {
@@ -1305,7 +1314,11 @@ BOX HOVER 8
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  
+    .welcome-text h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
     .welcome-text h2 {
         font-size: 40px;
         text-align: center;
@@ -1329,9 +1342,9 @@ BOX HOVER 8
         text-transform: uppercase;
     }
     .welcome-text h1 {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 600;
-        margin-top: 11%;
+        margin-top: 15%;
         text-align: left;
     }
   .welcome-text h2 {
@@ -1368,7 +1381,7 @@ BOX HOVER 8
 .welcome-text h1 {
     font-size: 22px;
     text-align: left;
-    margin-top: 5%;
+    margin-top: 30%;
 }
 }
 /*-------------------------------

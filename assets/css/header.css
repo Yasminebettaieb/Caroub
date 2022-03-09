@@ -674,8 +674,8 @@ ul#nav li.active > a::after {
     }
 
     ul#nav li a {
-        height: 40px;
-        color: #5368fd !important;
+        height: 70px;
+        color: black !important;
         font-weight: 400 !important;
     }
 
@@ -697,7 +697,7 @@ ul#nav li.active > a::after {
     ul#nav li a {
         color: #fff;
         padding: 10px 15px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     ul#nav li a::after {
@@ -760,8 +760,8 @@ ul#nav li.active > a::after {
         float: none;
     }
     .is-sticky ul#nav li a {
-        font-size: 10px;
-        padding: 5px  15px;
+        font-size: 16px;
+        padding: 15px  15px;
         color: #252525;
     }
 }
