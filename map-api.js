@@ -10,7 +10,6 @@ function initMap() {
      if (document.getElementById('Price') != null) {
         document.getElementById('Price').value="Calculer";
     }  
-     PriceCalculator();
     }
 
     );
@@ -19,7 +18,6 @@ function initMap() {
         if (document.getElementById('Price') != null) {
             document.getElementById('Price').value="Calculer";
         }  
-              PriceCalculator();
 
        }
        );
@@ -36,8 +34,7 @@ function locationChangeHandler(autoc,autoc1){
         if(place && place1){
         console.log(place.name);
         console.log(place.geometry.location.lat());
-        console.log(place.geometry.location.lng());
-    
+        console.log(place.geometry.location.lng());    
         console.log(place1.name);
         console.log(place1.geometry.location.lat());
         console.log(place1.geometry.location.lng());
@@ -47,7 +44,12 @@ function locationChangeHandler(autoc,autoc1){
         console.log(distance/1000);
         if (document.getElementById('Price') != null) {
             document.getElementById('Price').value="Calculer";
-        }        x =((Math.ceil(((distance/1000).toFixed(3))*10)/10)*1.6).toFixed(2);
+        }  
+            console.log(x);  
+            x =(x+4+((distance/1000)*1.7)).toFixed(2);
+         
+            console.log(x);
+
     }
         
    

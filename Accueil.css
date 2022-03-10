@@ -60,6 +60,7 @@
 .img{
  height: 162px !important;
  width: 162px !important;
+ margin-top: 7px;
 }
 
 .img1 {
@@ -68,8 +69,17 @@
   margin-top: 14px;
   margin-left: 20px;
 }
-
-.u-section-1 .u-text-3 {
+.test1 .u-text-3 {
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: center;
+  margin-left: 35%;
+  margin-bottom: 0;
+  margin-top: 38px;
+}
+.test2 .u-text-3 {
   letter-spacing: 1px;
   font-weight: 700;
   font-size: 1.5rem;
