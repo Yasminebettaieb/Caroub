@@ -179,10 +179,7 @@ header {
 
 /*---------------------------------
     3. SCROLL TO TOP
-----------------------------------*/
-.col-lg-7 {
-    width: -webkit-fill-available !important;
-}
+
 .scrolltotop {
     background: rgba(0, 0, 0, 0) linear-gradient(135deg, #584bfb 0%, #45aafd 99%) repeat scroll 0 0;
     border-radius: 50%;
