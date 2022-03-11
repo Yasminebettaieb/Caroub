@@ -9,6 +9,9 @@ function initMap() {
   
      if (document.getElementById('Price') != null) {
         document.getElementById('Price').value="Calculer";
+        locationChangeHandler(autocomplete,autocomplete1);
+
+        
     }  
     }
 
@@ -17,6 +20,9 @@ function initMap() {
         locationChangeHandler(autocomplete,autocomplete1);
         if (document.getElementById('Price') != null) {
             document.getElementById('Price').value="Calculer";
+            locationChangeHandler(autocomplete,autocomplete1);
+
+         
         }  
 
        }
@@ -48,7 +54,6 @@ function locationChangeHandler(autoc,autoc1){
             console.log(x);  
             x =(x+4+((distance/1000)*1.7)).toFixed(2);
          
-            console.log(x);
 
     }
         

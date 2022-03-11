@@ -39,7 +39,7 @@ Version: 2.0
     1. THEME BG COLOR
 -----------------------------*/
 .img1{
-    width: 40px;
+    width: 37px;
     margin: 3px;
 }
 .img2{
@@ -1160,11 +1160,11 @@ BOX HOVER 8
     display: inline-block;
     font-size: 11px;
     font-weight: 700;
-    height: 55px;
+    height: 65px;
     letter-spacing: 3px;
     margin-top: 50px;
     overflow: hidden;
-    padding: 14px 40px;
+    padding: 1px 50px;
     position: relative;
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
