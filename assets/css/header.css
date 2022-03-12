@@ -519,6 +519,7 @@ ul#nav li.active > a::after {
         max-height: 350px;
         overflow-x: hidden;
         overflow-y: auto;
+        display: none !important;
     }
 
     ul#nav li {
