@@ -273,7 +273,7 @@ header {
     line-height: 1.2;
     margin-bottom: 20px;
     margin-top: 20%;
-    text-transform: capitalize;
+    text-transform: none;
     font-weight: 600;
 }
 
@@ -2244,7 +2244,7 @@ BOX HOVER 8
 
 .contact-form label {
     color: #252525;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .contact-form input,

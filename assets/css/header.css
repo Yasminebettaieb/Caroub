@@ -11,6 +11,8 @@
 
 .menu-toggle.full {
     text-indent: -999px;
+    color: #000 !important;
+
 }
 
 .dd-toggle {
@@ -23,7 +25,6 @@
 
 .ham {
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
     -webkit-transition: -webkit-transform 400ms;
     transition: -webkit-transform 400ms;
     transition: transform 400ms;
@@ -313,6 +314,8 @@ ul#nav li ul a:hover {
 }
 
 .menu-toggle.full {
+    color: #000 !important;
+
     border: 2px solid;
     font-size: 20px;
     height: 40px;
@@ -439,11 +442,12 @@ ul#nav li.active > a::after {
 
     .menu-toggle.full,
     .navbar-header h3 a {
-        color: #ffffff !important;
+        color: #000 !important;
+
     }
 
     .line {
-        stroke: #ffffff;
+        stroke: #000;
     }
 
     .is-sticky .line {
@@ -514,12 +518,11 @@ ul#nav li.active > a::after {
 
     ul#nav {
         background: #ffffff none repeat scroll 0 0;
-        border: 1px solid #e4eaf3;
+        border: 1px solid #ffffff;
         width: 100%;
         max-height: 350px;
         overflow-x: hidden;
         overflow-y: auto;
-        display: none !important;
     }
 
     ul#nav li {
@@ -527,7 +530,7 @@ ul#nav li.active > a::after {
     }
 
     ul#nav li a {
-        color: #5368fd !important;
+        color: black !important;
         font-weight: 400 !important;
         height: 40px;
     }
@@ -611,11 +614,11 @@ ul#nav li.active > a::after {
 
     .menu-toggle.full,
     .navbar-header h3 a {
-        color: #ffffff !important;
+        color: #000 !important;
     }
 
     .line {
-        stroke: #ffffff;
+        stroke: black;
     }
 
     .is-sticky .line {

@@ -36,7 +36,7 @@ jQuery(document).on('ready', function ($) {
     $('.menu-toggle.full').on('click', function () {
         var menuclass = $('#main-nav').attr('class');
         if ('stellarnav light mobile active' == menuclass) {
-            hamberger.addClass('active');
+            hamberger.addClass('');
         } else if ('stellarnav light mobile' == menuclass) {
             hamberger.removeClass('active');
         }
