@@ -1316,6 +1316,10 @@ BOX HOVER 8
         margin-bottom: 20px;
         font-weight: 600;
     }
+    .owl-carousel .owl-item img {
+        width: 50%;
+     
+    }
     .welcome-text h2 {
         font-size: 40px;
         text-align: center;
@@ -1324,6 +1328,22 @@ BOX HOVER 8
     .top-area {
         height: auto;
     }
+    .single-screen > img {
+    margin-bottom: 100px;
+    margin-left: 30%;
+    margin-top: 60px;
+    transition: all 0.3s ease 0s;
+}
+.subtitle {
+    color: #5368fd;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
 }
 
 @media only screen and (max-width: 767px
@@ -1353,12 +1373,32 @@ BOX HOVER 8
     .top-area {
         height: auto;
     }
+    .subtitle {
+        color: #5368fd;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+        overflow: hidden;
+        text-transform: uppercase;
+        margin-top: 10%;
+    }
 
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .welcome-text h1 {
         margin-top: 5%;
+    }
+    .owl-carousel .owl-item img {
+        width: 40%;
+       
+    }
+    .single-screen > img {
+        margin-bottom: 100px;
+        margin-left: 30% !important; 
+        margin-top: 60px;
+        transition: all 0.3s ease 0s;
     }
 }
 
@@ -1367,6 +1407,16 @@ BOX HOVER 8
         font-size: 30px;
         text-align: center;
         margin-top: 15%;    }
+        .owl-carousel .owl-item img {
+            width: 50%;
+         
+        }
+        .single-screen > img {
+            margin-bottom: 100px;
+            margin-left: 29% !important; 
+            margin-top: 60px;
+            transition: all 0.3s ease 0s;
+        }
 }
 
 
