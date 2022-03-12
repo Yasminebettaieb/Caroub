@@ -134,6 +134,8 @@
 
 .navbar {
     border-bottom: 0 none;
+    background-color: #ffffff;
+    min-height: 40px !important;
     border-top: 0 none;
     margin-bottom: 0;
 }

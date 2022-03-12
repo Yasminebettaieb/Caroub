@@ -38,6 +38,7 @@ Version: 2.0
 /*---------------------------
     1. THEME BG COLOR
 -----------------------------*/
+
 .img1{
     width: 37px;
     margin: 3px;
@@ -238,7 +239,7 @@ header {
 
 .welcome-text-area {
     height: 100%;
-    padding-top: 100px;
+    padding-top: 10px;
     width: 100%;
 }
 
@@ -1362,7 +1363,7 @@ BOX HOVER 8
         font-size: 24px;
         font-weight: 600;
         margin-top: 1%;
-        text-align: left;
+        text-align: center;
     }
   .welcome-text h2 {
     font-size: 43px;
@@ -1438,7 +1439,7 @@ BOX HOVER 8
 }
 .welcome-text h1 {
     font-size: 21px;
-    text-align: left;
+    text-align: center;
    
 }
 .welcome-text h4 {
