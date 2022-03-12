@@ -1417,6 +1417,16 @@ BOX HOVER 8
             margin-top: 60px;
             transition: all 0.3s ease 0s;
         }
+        .subtitle {
+            color: #5368fd;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            text-transform: uppercase;
+            margin-top: 17%;
+        }
 }
 
 
