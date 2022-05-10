@@ -142,3 +142,7 @@
 		float: left;
 	}
 }
+
+.pac-item {
+	white-space: pre-line;
+}

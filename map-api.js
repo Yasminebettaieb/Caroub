@@ -1,91 +1,78 @@
-let x=0;
+let x = 0;
+var place, place1;
+
 function initMap() {
     var input = document.getElementById('PickupLocationInput');
     var input1 = document.getElementById('DropoffLocationInput');
     var autocomplete = new google.maps.places.Autocomplete(input);
     var autocomplete1 = new google.maps.places.Autocomplete(input1);
-    google.maps.event.addListener(autocomplete, 'place_changed' ,  function() {
-     locationChangeHandler(autocomplete,autocomplete1);
-  
-     if (document.getElementById('Price') != null) {
-        document.getElementById('Price').value="Calculer";
-        locationChangeHandler(autocomplete,autocomplete1);
-
-        
-    }  
-    }
-
+    google.maps.event.addListener(autocomplete, 'place_changed', function () {
+            if (document.getElementById('Price') != null) {
+                document.getElementById('Price').value = "Calculer";
+                locationChangeHandler(autocomplete, autocomplete1);
+            }
+        }
     );
-    google.maps.event.addListener(autocomplete1, 'place_changed' ,  function() {
-        locationChangeHandler(autocomplete,autocomplete1);
-        if (document.getElementById('Price') != null) {
-            document.getElementById('Price').value="Calculer";
-            locationChangeHandler(autocomplete,autocomplete1);
-
-         
-        }  
-
-       }
-       );
-
-
+    google.maps.event.addListener(autocomplete1, 'place_changed', function () {
+            if (document.getElementById('Price') != null) {
+                document.getElementById('Price').value = "Calculer";
+                locationChangeHandler(autocomplete, autocomplete1);
+            }
+        }
+    );
 }
 
 
 initMap();
-function locationChangeHandler(autoc,autoc1){
 
-        var place = autoc.getPlace();
-        var place1 = autoc1.getPlace();
-        if(place && place1){
-        console.log(place.name);
-        console.log(place.geometry.location.lat());
-        console.log(place.geometry.location.lng());    
-        console.log(place1.name);
-        console.log(place1.geometry.location.lat());
-        console.log(place1.geometry.location.lng());
+function locationChangeHandler(autoc, autoc1) {
 
-        var distance = google.maps.geometry.spherical.computeDistanceBetween(place.geometry.location, place1.geometry.location);       
-        console.log(distance);
-        console.log(distance/1000);
+    place = autoc.getPlace();
+    place1 = autoc1.getPlace();
+    if (place && place1) {
+
         if (document.getElementById('Price') != null) {
-            document.getElementById('Price').value="Calculer";
-        }  
-            console.log(x);  
-            x =(x+4+((distance/1000)*1.7)).toFixed(2);
-         
-
-    }
-        
-   
-}
-    
-function calcul(){
-    if (document.getElementById('Price') != null) {
-    document.getElementById('Price').value=x+" CHF";
-}
-}
-
-
-function PriceCalculator (){
-    
-    let kilometrage=document.getElementById('Kilometrage').value;
-        if(kilometrage==="" || dateText==="")
-        {return ;};
-    kilometrage=parseFloat(kilometrage);
-    let d=new Date(dateText);
-		
-		let price=6.60;
-       
-		
-         console.log(d.getDay());
-		if(d.getHours()>=6 && d.getHours()<20 && d.getDay()!=0)
-		{       
-				price=price+(10*3.20);}
-	   
-        else
-        {
-            price=price+(10*4.00);
+            document.getElementById('Price').value = "Calculer";
         }
-		
+        if(place1 && place) {
+            getPriceFromApi(place, place1);
+        }
+    }
+
+
+}
+
+function calcul() {
+    if (document.getElementById('Price') != null) {
+        if(x == 0) {
+            document.getElementById('Price').value = "Zone non couverte";
+        } else {
+            document.getElementById('Price').value = x + " CHF";
+        }
+    }
+}
+
+function getPriceFromApi(place, place1) {
+    const date = new Date();
+    date.setHours(date.getHours() - 1);
+   $.post('https://us-central1-car5f4d4e5.cloudfunctions.net/api', {
+        "client_id": "47SQyP7rDbOgWpiWyuBoF4Cuxnq1",
+        "client_secret": "dfe992acee3db0ffa70a",
+        "type": "quote",
+        "date": date.toISOString(),
+        "origin": {
+            "latitude": place.geometry.location.lat(),
+            "longitude": place.geometry.location.lng(),
+            "text": place.formatted_address,
+        },
+        "destination": {
+            "latitude": place1.geometry.location.lat(),
+            "longitude": place1.geometry.location.lng(),
+            "text": place1.formatted_address,
+        }
+    }, function (response) {
+        const data = JSON.parse(response);
+        x = data.quote.length ? data.quote[0].total / 1000 : 0;
+        calcul();
+    })
 }

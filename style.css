@@ -38,7 +38,13 @@ Version: 2.0
 /*---------------------------
     1. THEME BG COLOR
 -----------------------------*/
-
+.fab {font-size: 50px;padding: 5px 10px}
+.fa-facebook {color: #3b5998}
+.fa-twitter {color:#1da1f2}
+.fa-youtube {color:#ff0000}
+.fa-instagram {color:#c32aa3}
+.fa-spotify {color:##00e461}
+.fa-soundcloud {color:#FF3300}
 .img1{
     width: 37px;
     margin: 3px;
@@ -3071,7 +3077,7 @@ BOX HOVER 8
     display: flex;
     align-items: center;
     height: 100%;
-    margin-top: 15%;
+    margin-top: 100px;
 }
 
 .home5-layer-1 {

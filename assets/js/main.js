@@ -139,10 +139,10 @@ jQuery(document).on('ready', function ($) {
     /*------------------------------
         VIDEO POPUP
     --------------------------------*/
-    var videoModal = $(".video-popup,.post-video-popup");
-    videoModal.modalVideo({
-        channel: 'youtube'
-    });
+    // var videoModal = $(".video-popup,.post-video-popup");
+    // videoModal.modalVideo({
+    //     channel: 'youtube'
+    // });
 
     /* -------------------------------------------------------
      PORTFOLIO FILTER SET ACTIVE CLASS FOR STYLE
@@ -174,7 +174,7 @@ jQuery(document).on('ready', function ($) {
     /*------------------------------
         IMAGE POPUP
     -------------------------------*/
-    $('.portfolio-big-thumb').venobox();
+    // $('.portfolio-big-thumb').venobox();
 
     /*---------------------------
         SERVICE SLIDER
@@ -628,8 +628,8 @@ jQuery(document).on('ready', function ($) {
     /*--------------------------
         STICKY SIDEBAR
     ---------------------------*/
-    $('.content-area .col-md-8, .content-area .col-md-4').theiaStickySidebar({
-    });
+    // $('.content-area .col-md-8, .content-area .col-md-4').theiaStickySidebar({
+    // });
     
     /*-------------------------
         HEADER SEARCH FORM
@@ -712,7 +712,7 @@ jQuery(window).on('load', function () {
     /*---------------------------
         ISOTOPE ACTIVE ON LOAD
     -----------------------------*/
-    $(".portfolio-gallery").isotope({
-        itemSelector: '.single-portfolio'
-    });
+    // $(".portfolio-gallery").isotope({
+    //     itemSelector: '.single-portfolio'
+    // });
 });

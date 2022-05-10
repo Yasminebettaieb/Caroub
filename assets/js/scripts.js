@@ -5,7 +5,7 @@
 	$(document).ready(function () {
 		transfers.init();
 	});
-	
+
 	$(window).on('load', function() {
 		transfers.load();
 	});
@@ -18,14 +18,14 @@
 		init: function () {
 			
 			// MOBILE MENU
-			$('.main-nav').slicknav({
-				prependTo:'.header .wrap',
-				allowParentLinks: true,
-				label:''
-			});
+			// $('.main-nav').slicknav({
+			// 	prependTo:'.header .wrap',
+			// 	allowParentLinks: true,
+			// 	label:''
+			// });
 			
 			// CUSTOM FORM ELEMENTS
-			$('input[type=radio], input[type=checkbox],input[type=number], select').uniform();
+			// $('input[type=radio], input[type=checkbox],input[type=number], select').uniform();
 			
 			// SEARCH RESULTS 
 			$('.information').hide();
